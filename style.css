@@ -1,0 +1,22 @@
+.container {
+  display: flex;
+  margin: 2rem;
+}
+.palindrome {
+  margin-right: 2rem;
+  justify-content: center;
+}
+
+button {
+  margin-top: 1rem;
+  width: 10rem;
+}
+input {
+  width: 10rem;
+}
+
+ul {
+  border: 2px solid black;
+  max-height: 20rem;
+  overflow: auto;
+}
