@@ -27,4 +27,22 @@ const palindrome = () => {
 perfectButton.addEventListener("click", () => {
   perfectArea.innerHTML = "";
   perfectNumbers();
+  console.log(typeof n1.value);
 });
+
+const perfectNumbers = () => {
+  for (let i = Number(n1.value) || 1; i <= Number(n2.value); i++) {
+    let sum = 0;
+    for (let j = 1; j < i; j++) {
+      if (i % j == 0) {
+        sum += j;
+      }
+    }
+    if (sum == i) {
+      let perfectList = document.createElement("li");
+      perfectArea.appendChild(perfectList);
+
+      perfectList.innerHTML += i;
+    }
+  }
+};
