@@ -13,7 +13,7 @@ palindromeButton.addEventListener("click", () => {
 });
 
 const palindrome = () => {
-  for (i = n1.value; i <= n2.value; i++) {
+  for (i = Number(n1.value); i <= Number(n2.value); i++) {
     if (String(i).split("").reverse().join("") == String(i)) {
       console.log(i);
       let palindromeList = document.createElement("li");
