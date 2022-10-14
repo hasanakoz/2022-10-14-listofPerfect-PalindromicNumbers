@@ -13,7 +13,7 @@ palindromeButton.addEventListener("click", () => {
 });
 
 const palindrome = () => {
-  for (i = Number(n1.value); i <= Number(n2.value); i++) {
+  for (let i = Number(n1.value); i <= Number(n2.value); i++) {
     if (String(i).split("").reverse().join("") == String(i)) {
       console.log(i);
       let palindromeList = document.createElement("li");
@@ -27,7 +27,6 @@ const palindrome = () => {
 perfectButton.addEventListener("click", () => {
   perfectArea.innerHTML = "";
   perfectNumbers();
-  console.log(typeof n1.value);
 });
 
 const perfectNumbers = () => {
